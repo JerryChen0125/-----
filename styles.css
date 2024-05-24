@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('temple.jpg'); /* 替換成您的背景圖片路徑 */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-size: 2em; /* 將整個頁面的字體大小放大2倍 */
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+    font-size: 1em; /* 放大標題字體大小 */
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#story {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px; /* 可根據需要調整框的內邊距 */
+    border-radius: 10px; /* 可根據需要調整框的圓角大小 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* 陰影效果 */
+    width: 80%; /* 寬度調整為80% */
+    max-width: 700px; /* 最大寬度 */
+    text-align: center; /* 文本置中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; /* 將白框置中 */
+    height: 5vh; /* 調整高度以適應內容 */
+}
+
+#startButton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto; /* 將按鈕置中 */
+}
+
+#startButton img {
+    width: 300px; /* 按鈕圖片大小 */
+    height: auto;
+}
+
+#startButton span {
+    position: absolute;
+    bottom: 10px; /* 調整文字位置 */
+    color: white;
+    font-size: 3em; /* 調整文字大小 */
+    text-align: center;
+    font-weight: bold;
+    width: 100%; /* 文字寬度 */
+    z-index: 1; /* 確保文字在圖片上方顯示 */
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.show {
+    opacity: 1;
+}
